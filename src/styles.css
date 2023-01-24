@@ -1,0 +1,7 @@
+.homeHeight {
+	height: calc(100vh - 59px);
+}
+
+.aboutHeight {
+	height: calc(100vh - 95px);
+}
