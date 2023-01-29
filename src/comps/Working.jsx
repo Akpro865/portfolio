@@ -25,7 +25,7 @@ import postgresql from '../assets/techs/postgresql.png'
 
 function Working(){
 	return (
-		<section className='my-10'>
+		<section className='my-32'>
 		  <div className='my-24 flex justify-center flex-col'>
 		    <h3 className='text-3xl font-semibold flex justify-center'>Working With</h3>
 		    <span className='text-gray-700 flex justify-center'>Experienced techs</span>
@@ -130,16 +130,16 @@ function Working(){
 		    <span className='mx-6 flex justify-center flex-col items-center'>
 		      <img src={redis} className='h-20 w-20 object-cover border p-2 my-2'/>
 		      <span className='py-2'>Redis</span>
+		    </span>		    
+
+		    <span className='mx-6 flex justify-center flex-col items-center'>
+		      <img src={node} className='h-20 w-20 object-cover border p-2 my-2'/>
+		      <span className='py-2'>NodeJs</span>
 		    </span>
 
 		    <span className='mx-6 flex justify-center flex-col items-center'>
 		      <img src={jwt} className='h-20 w-20 object-cover border p-2 my-2'/>
 		      <span className='py-2'>jwt</span>
-		    </span>
-
-		    <span className='mx-6 flex justify-center flex-col items-center'>
-		      <img src={node} className='h-20 w-20 object-cover border p-2 my-2'/>
-		      <span className='py-2'>NodeJs</span>
 		    </span>
 
 		    <span className='mx-6 flex justify-center flex-col items-center'>

@@ -4,7 +4,8 @@ import About from './About'
 import Skills from './Skills'
 import Services from './Services'
 import Working from './Working'
-
+import Portfolio from './Portfolio'
+import Projects from './Projects' 
 function Home(){
 	return (
 		<div>
@@ -13,7 +14,8 @@ function Home(){
 		   <About />
 		   <Skills />
 		   <Services />	 
-		   <Working />  
+		   <Working />		   
+		   <Projects />
 		</div>
 	)
 }

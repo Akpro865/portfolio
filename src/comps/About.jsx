@@ -1,4 +1,5 @@
 import { HiDownload } from 'react-icons/hi'
+import { SiJavascript } from 'react-icons/si'
 import profile2 from '../assets/ak2.jpg'
 import profile3 from '../assets/ak3.jpg'
 import '../styles.css'
@@ -10,7 +11,8 @@ function About(){
 		    <h2 className='flex justify-center text-3xl font-medium items-center'>About Myself</h2>
 		    <span className='flex justify-center text-gray-700'>Intro to me</span>
 		  </div>
-		  <section className='homeHeight flex items-center'>    
+		  <section className='homeHeight flex items-center relative'>
+		    <SiJavascript className='absolute h-28 w-28 -top-[1px] right-[100px] text-yellow-50 bg-gray-200'/>   
 		    <section className='flex justify-between items-center'>
 			    <div className='basis-1/2 flex justify-center items-center'>
 			     <img src={profile2} alt='profile' className='h-[280px] w-96 object-cover rounded-xl'/>

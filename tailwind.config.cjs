@@ -13,6 +13,7 @@ module.exports = {
     "./src/comps/Skills.jsx",
     "./src/comps/Contact.jsx",
     "./src/comps/Working.jsx",    
+    "./src/comps/Projects.jsx",
   ],
   theme: {
     extend: {
