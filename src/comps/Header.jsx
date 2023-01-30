@@ -28,7 +28,7 @@ function Header(){
     };
 
 	return (
-	  <header className='flex sticky top-0 z-50 bg-white justify-between py-3 border-b font-medium items-center'>
+	  <header className='flex sm:mx-10 lg:mx-28 sticky top-0 z-50 bg-white justify-between py-3 border-b font-medium items-center'>
 		<section>
 		  <h2 className='text-xl'>AKPRO</h2>
 		</section>

@@ -9,7 +9,7 @@ import Footer from './comps/Footer'
 function App() {
 
   return (
-    <div className='sm:px-10 lg:px-28'>
+    <div className=''>
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>

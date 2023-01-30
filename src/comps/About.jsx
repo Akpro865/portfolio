@@ -1,5 +1,6 @@
 import { HiDownload } from 'react-icons/hi'
 import { SiJavascript } from 'react-icons/si'
+import { GiLeafSkeleton } from 'react-icons/gi'
 import profile2 from '../assets/ak2.jpg'
 import profile3 from '../assets/ak3.jpg'
 import '../styles.css'
@@ -13,6 +14,7 @@ function About(){
 		  </div>
 		  <section className='homeHeight flex items-center relative'>
 		    <SiJavascript className='absolute h-28 w-28 -top-[1px] right-[100px] text-yellow-50 bg-gray-200'/>   
+		    <GiLeafSkeleton className='absolute h-9 w-9 text-green-500 bottom-10 left-36'/>
 		    <section className='flex justify-between items-center'>
 			    <div className='basis-1/2 flex justify-center items-center'>
 			     <img src={profile2} alt='profile' className='h-[280px] w-96 object-cover rounded-xl'/>

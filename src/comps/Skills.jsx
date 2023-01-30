@@ -1,9 +1,11 @@
 import { SlScreenDesktop } from 'react-icons/sl'
 import { FiServer } from 'react-icons/fi'
+import { BsFillBugFill } from 'react-icons/bs'
 
 function Skills(){
 	return (
-		<section>
+		<section className='relative'>
+		  <BsFillBugFill className='absolute h-10 w-10 text-red-500 top-12 right-3'/>
 		  <div className='my-12 flex justify-center flex-col'>
 		    <h2 className='text-3xl font-semibold flex justify-center'>Skills</h2>
 		    <span className='text-gray-700 flex justify-center'>My Technical Skills</span>

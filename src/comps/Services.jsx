@@ -1,10 +1,11 @@
-import { BsCodeSlash } from 'react-icons/bs'
+import { BsCodeSlash, BsGithub } from 'react-icons/bs'
 import { MdDevices, MdOutlineRateReview } from 'react-icons/md'
 import { IoPulseOutline } from 'react-icons/io5'
 
 function Services(){
 	return (
-		<section className=''>
+		<section className='relative'>
+		  <BsGithub className='absolute h-52 w-52 text-blue-200 -right-48 -top-24' />
 		  <div className='lg:my-32'>
 		    <h2 className='flex justify-center text-3xl font-semibold'>Services</h2>
 		    <span className='flex justify-center text-gray-700'>My Services</span>

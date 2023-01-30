@@ -6,17 +6,24 @@ import Services from './Services'
 import Working from './Working'
 import Portfolio from './Portfolio'
 import Projects from './Projects' 
+import Contact from './Contact'
+import Footer from './Footer'
+
 function Home(){
 	return (
-		<div>
+		<>
 		   <Header />
-		   <Hero />	
-		   <About />
-		   <Skills />
-		   <Services />	 
-		   <Working />		   
-		   <Projects />
-		</div>
+		   <div className='sm:px-10 lg:px-28'>
+		     <Hero />	
+		     <About />
+		     <Skills />
+		     <Services />	 
+		     <Working />		   
+		     <Projects />
+		     <Contact />
+		   </div>
+		   <Footer />
+		</>
 	)
 }
 
