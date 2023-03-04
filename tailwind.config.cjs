@@ -20,6 +20,9 @@ module.exports = {
       backgroundImage: {
         'webdev': "url(./src/assets/webdev.webp)"
       },
+      colors: {
+        "second": "var(--background-color)"
+      },
       backgroundOpacity: {
         '10': '0.1',
         '20': '0.2',

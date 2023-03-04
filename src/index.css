@@ -7,6 +7,7 @@
 :root {
   --text-color: black;
   --text-secondary: #5f6368;
+  --background-color: #f9f9f9;
 
   --primary-color: #21b6b7;
 
@@ -20,11 +21,12 @@
 }
 
 [data-theme="dark"] {
-  --text-color: #f0f0f0;
+  --text-color: white;
   --text-secondary: #b3c5cd;
 
   --primary-color: #21b6b7;
-
+  --background-color: #252329;
+  
   --background-border: #5e5e5e;
   --background-color-behind: #3c393f;
   --background-color-card: #1f1f1f;
