@@ -4,7 +4,7 @@ import { BsFillBugFill } from 'react-icons/bs'
 
 function Skills(){
 	return (
-		<section className='relative'>
+		<section className='relative' id='skills'>
 		  <BsFillBugFill className='absolute h-10 w-10 text-yellow-500 top-12 right-3'/>
 		  <div className='my-12 flex justify-center flex-col'>
 		    <h2 className='text-3xl font-semibold flex justify-center'>Skills</h2>
@@ -12,7 +12,7 @@ function Skills(){
 		  </div>
 
 		  <section className='md:flex justify-around'>
-		    <div className=''>
+		    <div className='px-12 sm:px-0'>
 		      <span className='flex items-center py-5'>
 		        <SlScreenDesktop className='text-4xl text-green-600'/>
 		        <div>
@@ -86,7 +86,7 @@ function Skills(){
 
 		    </div>
 
-		    <div className=''>
+		    <div className='px-12 sm:px-0'>
 		      <span className='flex items-center py-5'>
 		        <FiServer className='text-4xl text-green-600'/>
 		        <div className='flex flex-col'>

@@ -25,10 +25,10 @@ import postgresql from '../assets/techs/postgresql.png'
 
 function Working(){
 	return (
-		<section className='my-32'>
+		<section className='my-32' id='portfolio'>
 		  <div className='my-24 flex justify-center flex-col'>
 		    <h3 className='text-3xl font-semibold flex justify-center'>Working With</h3>
-		    <span className='text-gray-700 flex justify-center'>Experienced techs</span>
+		    <span className='text-secondary flex justify-center'>Experienced techs</span>
 		  </div>
 
 		  <div className='flex flex-wrap'>

@@ -13,9 +13,9 @@ function Footer(){
 		</div>
 
 		<div className='basis-1/3 flex justify-center font-semibold'>
-		  <span className='mx-3 cursor-pointer'>skills</span>
-		  <span className='mx-3 cursor-pointer'>services</span>
-		  <span className='mx-3 cursor-pointer'>projects</span>
+		  <a id="link" href="#skills"><span className='mx-3 cursor-pointer'>skills</span></a>
+		  <a id="link" href="#services"><span className='mx-3 cursor-pointer'>services</span></a>
+		  <a id="link" href="#portfolio"><span className='mx-3 cursor-pointer'>projects</span></a>
 		</div>
 
 		<div className='basis-1/3'>

@@ -13,7 +13,7 @@ function Home(){
 	return (
 		<>
 		   <Header />
-		   <div className='sm:px-10 lg:px-28'>
+		   <div className='sm:px-10 lg:px-28 px-3'>
 		     <Hero />	
 		     <About />
 		     <Skills />

@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
 import { BiMoon } from 'react-icons/bi'
 import { FiSun } from 'react-icons/fi'
+import { GoThreeBars } from 'react-icons/go'
+import { IoCloseSharp } from 'react-icons/io5'
 
 function Header(){
 	const [theme, setTheme] = useState("light")
+	const [show, setShow] = useState(false)
 
 	useEffect(() => {
     	document.documentElement.setAttribute(
@@ -27,21 +30,27 @@ function Header(){
      document.documentElement.setAttribute("data-theme", theme);
     };
 
+    const handleToggle = ()=>{
+    	var navbar = document.querySelector('.togglebar')
+    	navbar.classList.toggle('active')
+    }
+
 	return (
-	  <header className='flex sm:mx-10 lg:mx-28 sticky top-0 z-50 bg-second justify-between py-3 border-b font-medium items-center'>
+	  <header className='flex relative sm:mx-10 lg:mx-28 sticky top-0 z-50 bg-second justify-between py-3 border-b font-semibold items-center'>
 		<section>
-		  <h2 className='text-xl'>AKPRO</h2>
+		  <a id="link" href="#"><h2 className='text-xl md:py-2 hover:text-green-500'>AKPRO</h2></a>
+		  <span onClick={handleToggle} className='px-2 absolute top-4 right-0'><GoThreeBars className='block text-3xl md:hidden cursor-pointer'/></span>
 		</section>
-		<section className='flex items-center'>
-		  <span className='lg:px-4 cursor-pointer'>Home</span>
-		  <span className='lg:px-4 cursor-pointer'>About</span>
-		  <span className='lg:px-4 cursor-pointer'>Skills</span>
-		  <span className='lg:px-4 cursor-pointer'>Services</span>
-		  <span className='lg:px-4 cursor-pointer'>Portfolio</span>
-		  <span className='lg:px-4 cursor-pointer'>Contact</span>
+		<section className='showbar togglebar h-0 overflow-hidden flex text-xl md:text-base md:h-auto py- flex-col justify-evenly md:flex-row bg-green-400 md:bg-inherit items-center absolute md:static top-[50px] left-0 right-0 transition duration-300'>		 
+		  <a id="link" href="#"><span className='lg:px-4 opacity-0 md:opacity-100 hover:text-green-500 cursor-pointer'>Home</span></a>
+		  <a id="link" href="#about"><span className='lg:px-4 opacity-0 md:opacity-100 hover:text-green-500 px-1.5 cursor-pointer'>About</span></a>
+		  <a id="link" href="#skills"><span className='lg:px-4 opacity-0 md:opacity-100 hover:text-green-500 px-1.5 cursor-pointer'>Skills</span></a>
+		  <a id="link" href="#services"><span className='lg:px-4 opacity-0 md:opacity-100 hover:text-green-500 px-1.5 cursor-pointer'>Services</span></a>
+		  <a id="link" href="#portfolio"><span className='lg:px-4 opacity-0 md:opacity-100 hover:text-green-500 px-1.5 cursor-pointer'>Portfolio</span></a>
+		  <a id="link" href="#contact"><span className='lg:px-4 opacity-0 md:opacity-100 hover:text-green-500 px-1.5 cursor-pointer'>Contact</span></a>
 		  { (theme === 'light') ?
-		   	(<span onClick={switchTheme} className='p-2 text-[22px] animation duration-500 hover:bg-background-color-input cursor-pointer rounded-full'><BiMoon /></span>)	:
-		   	(<span onClick={switchTheme} className='p-2 text-[22px] animation duration-500 hover:bg-background-color-input cursor-pointer rounded-full'><FiSun /></span>)	   	
+		   	(<span onClick={switchTheme} className='px-2 text-[22px] opacity-0 md:opacity-100 hover:text-green-500 animation duration-500 hover:bg-background-color-input cursor-pointer rounded-full'><BiMoon /></span>)	:
+		   	(<span onClick={switchTheme} className='px-2 text-[22px] opacity-0 md:opacity-100 hover:text-green-500 animation duration-500 hover:bg-background-color-input cursor-pointer rounded-full'><FiSun /></span>)	   	
 		  }
 		</section>
 	  </header>

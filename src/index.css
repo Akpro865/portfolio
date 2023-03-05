@@ -40,4 +40,15 @@ body {
   font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
+
+  scroll-behavior: smooth;
+}
+
+.showbar.active {
+  height: 450px;
+  animation: linear 2s;
+}
+
+.showbar.active span {
+  opacity: 1;
 }
