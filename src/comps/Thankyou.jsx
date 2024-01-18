@@ -13,4 +13,4 @@ function Thankyou(){
 	)
 }
 
-export default Home
+export default Thankyou
