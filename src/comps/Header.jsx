@@ -3,13 +3,14 @@ import { BiMoon } from 'react-icons/bi'
 import { FiSun } from 'react-icons/fi'
 import { GoThreeBars } from 'react-icons/go'
 import { IoCloseSharp } from 'react-icons/io5'
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 
 function Header(){
 	const [theme, setTheme] = useState("light")
 	const [show, setShow] = useState(false)
 
 	let { thankyou } = useParams();
+	const location = useLocation()
 
 	useEffect(() => {
     	document.documentElement.setAttribute(
@@ -38,7 +39,7 @@ function Header(){
     	navbar.classList.toggle('active')
     }
 
-	console.log(thankyou)
+	console.log(thankyou, location)
 
 	return (
 	  <header className='flex relative sm:mx-10 lg:mx-28 sticky top-0 z-50 bg-second justify-between py-3 border-b font-semibold items-center'>
