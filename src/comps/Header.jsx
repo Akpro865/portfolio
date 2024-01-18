@@ -41,7 +41,7 @@ function Header(){
     }
 
 	console.log(thankyou, location)
-	console.log(null == true ? 'yes' : 'no')
+	//console.log(null == true ? 'yes' : 'no')
 
 	return (
 	  <header className='flex relative sm:mx-10 lg:mx-28 sticky top-0 z-50 bg-second justify-between py-3 border-b font-semibold items-center'>

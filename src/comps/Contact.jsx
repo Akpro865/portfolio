@@ -1,6 +1,9 @@
 import '../styles.css'
+import { useNavigate, Link } from "react-router-dom";
 
 function Contact(){
+	const navigate = useNavigate();
+
 	return (
 	  <section id='contact' className='flex flex-col md:flex-row homeHeight justify-center items-center'>
 		<div className='basis-1/2 px-20 font-semibold flex flex-col justify-center'>
@@ -16,7 +19,9 @@ function Contact(){
 		  <label className='font-medium my-1'>Tell breifly</label>
 		  <textarea className='h-24 md:w-[60%] text-black my-2 rounded-[8px] bg-gray-100 outline-green-400 p-2'/>
 		  <div>
-		   <button className='bg-green-500 px-4 py-3 rounded-[8px] my-3 text-white font-bold'>Send message</button>
+		   <Link to='/thankyou'>
+		     <button className='bg-green-500 px-4 py-3 rounded-[8px] my-3 text-white font-bold'>Send message</button>
+		   </Link>
 		  </div>
 		</div>
 	  </section>

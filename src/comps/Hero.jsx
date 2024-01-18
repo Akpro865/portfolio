@@ -18,7 +18,10 @@ function Hero(){
 		      <p className='py-1 text-xl text-secondary'>Full-Stack developer</p>
 		      <p className='flex text-secondary text-[17px] py-1'>A good level knowledge in Full-Stack Development, Can develope well design User-interface with Love.</p>
 		      <div className='pt-5'>
-		       <button className='flex bg-green-500 rounded-[7px] border-none px-6 py-3.5 text-white font-semibold items-center'>Contact <IoSend className='pl-3 text-3xl text-white'/></button>
+		       <button className='flex bg-green-500 rounded-[7px] border-none px-6 py-3.5 text-white font-semibold items-center'>
+			   <a id="link" href="#contact"></a>
+				Contact <IoSend className='pl-3 text-3xl text-white'/>
+			   </button>
 		      </div>
 		    </div>
 		    <div className='basis-2/5 px-2 py-5 md:py-0 flex justify-center'>
