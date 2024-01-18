@@ -3,10 +3,13 @@ import { BiMoon } from 'react-icons/bi'
 import { FiSun } from 'react-icons/fi'
 import { GoThreeBars } from 'react-icons/go'
 import { IoCloseSharp } from 'react-icons/io5'
+import { useParams } from 'react-router-dom';
 
 function Header(){
 	const [theme, setTheme] = useState("light")
 	const [show, setShow] = useState(false)
+
+	let { thankyou } = useParams();
 
 	useEffect(() => {
     	document.documentElement.setAttribute(
@@ -35,10 +38,12 @@ function Header(){
     	navbar.classList.toggle('active')
     }
 
+	console.log(thankyou)
+
 	return (
 	  <header className='flex relative sm:mx-10 lg:mx-28 sticky top-0 z-50 bg-second justify-between py-3 border-b font-semibold items-center'>
 		<section>
-		  <a id="link" href="#"><h2 className='text-xl md:py-2 hover:text-green-500'>AKPRO</h2></a>
+		  <a id="link" href={thankyou ? 'https://portfolio-two-azure-29.vercel.app/' : '#'}><h2 className='text-xl md:py-2 hover:text-green-500'>AKPRO</h2></a>
 		  <span onClick={handleToggle} className='px-2 absolute top-4 right-0'><GoThreeBars className='block text-3xl md:hidden cursor-pointer'/></span>
 		</section>
 		<section className='showbar togglebar h-0 overflow-hidden flex text-xl md:text-base md:h-auto py- flex-col justify-evenly md:flex-row bg-green-400 md:bg-inherit items-center absolute md:static top-[50px] left-0 right-0 transition duration-300'>		 
