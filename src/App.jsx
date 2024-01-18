@@ -5,6 +5,7 @@ import Services from './comps/Services'
 import Portfolio from './comps/Portfolio'
 import Contact from './comps/Contact'
 import Footer from './comps/Footer' 
+import Thankyou from './comps/Thankyou' 
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <div className=''>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/thankyou' element={<Thankyou />} />
       </Routes>
     </div>
   )
