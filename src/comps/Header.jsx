@@ -19,7 +19,7 @@ function Header(){
       	 localStorage.getItem("theme")
     	);
     	setTheme(localStorage.getItem("theme"));
-  	}, []);
+  	}, [theme]);
 
 	const switchTheme = () => {
       if (theme === "light") {
